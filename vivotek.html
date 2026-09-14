@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VivoTek Products | Access Systems and Security</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+body { margin:0; font-family:'Inter',sans-serif; background:#f5f5f7; color:#1c1c1e; }
+header { background:#1c1c1e; color:white; padding:20px 40px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; }
+header h1 { margin:0; font-size:1.5rem; }
+nav ul { list-style:none; display:flex; gap:16px; padding:0; margin:0; flex-wrap:wrap; }
+nav a { color:white; text-decoration:none; font-weight:500; }
+nav a:hover { opacity:0.75; }
+main { max-width:1200px; margin:auto; padding:50px 30px; }
+h2 { font-size:2.2rem; margin-bottom:10px; }
+.notice { background:#ffffff; padding:18px; border-left:5px solid #1c1c1e; margin:25px 0; font-size:0.95rem; }
+table { width:100%; border-collapse:collapse; margin-top:30px; }
+th, td { padding:14px; border-bottom:1px solid #ddd; text-align:left; }
+th { background:#efefef; font-weight:600; }
+input[type="number"] { width:70px; padding:6px; }
+button { padding:8px 14px; background:#1c1c1e; color:white; border:none; border-radius:6px; cursor:pointer; }
+button:hover { opacity:0.85; }
+footer { background:#1c1c1e; color:white; text-align:center; padding:20px; margin-top:60px; font-size:0.9rem; }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Access Systems and Security</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="doorking.html">Doorking</a></li>
+      <li><a href="butterflymx.html">ButterflyMX</a></li>
+      <li><a href="schlage.html">Schlage</a></li>
+      <li><a href="hid.html">HiD</a></li>
+      <li><a href="abb.html">ABB</a></li>
+      <li><a href="hikvision.html">HikVision</a></li>
+      <li><a href="vivotek.html">VivoTek</a></li>
+      <li><a href="rath-janus.html">Rath-Janus</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart (<span id="cartCount">0</span>)</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<h2>VivoTek Products</h2>
+<p>IP cameras, network video recorders, and access control solutions.</p>
+
+<div class="notice">
+If the VivoTek product or accessory you need is not listed below, please contact us and we will provide pricing and availability.
+</div>
+
+<table>
+<tr>
+<th>Part Number</th>
+<th>Description</th>
+<th>Price (USD)</th>
+<th>Qty</th>
+<th></th>
+</tr>
+
+<!-- ===== IP CAMERAS ===== -->
+<tr><td>FD9387-H</td><td>8MP Fisheye Dome Camera</td><td>$450</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'FD9387-H','8MP Fisheye Dome Camera',450)">Add</button></td></tr>
+<tr><td>IP8332-C</td><td>3MP Outdoor Bullet Camera</td><td>$215</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'IP8332-C','3MP Outdoor Bullet Camera',215)">Add</button></td></tr>
+<tr><td>MD8561</td><td>2MP Mini Dome Camera</td><td>$180</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'MD8561','2MP Mini Dome Camera',180)">Add</button></td></tr>
+<tr><td>FD8169A-HN</td><td>4MP Fixed Dome Camera</td><td>$320</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'FD8169A-HN','4MP Fixed Dome Camera',320)">Add</button></td></tr>
+<tr><td>IB8367-HT</td><td>2MP Bullet Camera with IR</td><td>$210</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'IB8367-HT','2MP Bullet Camera',210)">Add</button></td></tr>
+
+<!-- ===== NVRs ===== -->
+<tr><td>NR9162</td><td>16CH Network Video Recorder</td><td>$1,650</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'NR9162','16CH NVR',1650)">Add</button></td></tr>
+<tr><td>NR9322</td><td>32CH NVR</td><td>$2,900</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'NR9322','32CH NVR',2900)">Add</button></td></tr>
+
+<!-- ===== ACCESSORIES ===== -->
+<tr><td>PW9130</td><td>PoE Switch 8-Port</td><td>$320</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'PW9130','PoE Switch 8-Port',320)">Add</button></td></tr>
+<tr><td>PW9240</td><td>PoE Switch 24-Port</td><td>$1,150</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'PW9240','PoE Switch 24-Port',1150)">Add</button></td></tr>
+<tr><td>FD8369-HV</td><td>Outdoor Vandal Dome Camera</td><td>$340</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'FD8369-HV','Outdoor Vandal Dome Camera',340)">Add</button></td></tr>
+<tr><td>FD9187-H</td><td>8MP Fisheye Dome</td><td>$460</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'FD9187-H','8MP Fisheye Dome',460)">Add</button></td></tr>
+<tr><td>IB8381-T</td><td>2MP Bullet with IR</td><td>$225</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'IB8381-T','2MP Bullet IR',225)">Add</button></td></tr>
+
+<!-- ===== ADDITIONAL PARTS ===== -->
+<tr><td>FD9189-H</td><td>4MP Fisheye Dome Camera</td><td>$375</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'FD9189-H','4MP Fisheye Dome',375)">Add</button></td></tr>
+<tr><td>FD8368-H</td><td>2MP Fixed Dome Camera</td><td>$185</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'FD8368-H','2MP Fixed Dome',185)">Add</button></td></tr>
+<tr><td>IB8382-T</td><td>3MP Bullet Camera</td><td>$240</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'IB8382-T','3MP Bullet Camera',240)">Add</button></td></tr>
+<tr><td>MD8562</td><td>2MP Mini Dome</td><td>$195</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'MD8562','2MP Mini Dome',195)">Add</button></td></tr>
+<tr><td>FD8389-H</td><td>4MP Fisheye Dome</td><td>$385</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'FD8389-H','4MP Fisheye Dome',385)">Add</button></td></tr>
+
+</table>
+</main>
+
+<footer>
+© Access Systems and Security — VivoTek Distributor
+</footer>
+
+<script>
+function addToCart(btn, part, name, price){
+  const qty = parseInt(btn.parentElement.previousElementSibling.querySelector("input").value);
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const existing = cart.find(i => i.part === part);
+  if(existing){
+    existing.quantity += qty;
+  } else {
+    cart.push({part,name,price,quantity:qty});
+  }
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCartCount();
+  alert("Added to cart");
+}
+
+function updateCartCount(){
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  document.getElementById("cartCount").textContent =
+    cart.reduce((t,i)=>t+i.quantity,0);
+}
+updateCartCount();
+</script>
+
+</body>
+</html>

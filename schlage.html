@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schlage Products | Access Systems and Security</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+body {
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:#f5f5f7;
+  color:#1c1c1e;
+}
+header {
+  background:#1c1c1e;
+  color:white;
+  padding:20px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+header h1 { margin:0; font-size:1.5rem; }
+nav ul {
+  list-style:none;
+  display:flex;
+  gap:16px;
+  padding:0;
+  margin:0;
+  flex-wrap:wrap;
+}
+nav a { color:white; text-decoration:none; font-weight:500; }
+nav a:hover { opacity:0.75; }
+main { max-width:1200px; margin:auto; padding:50px 30px; }
+h2 { font-size:2.2rem; margin-bottom:10px; }
+.notice {
+  background:#ffffff;
+  padding:18px;
+  border-left:5px solid #1c1c1e;
+  margin:25px 0;
+  font-size:0.95rem;
+}
+table { width:100%; border-collapse:collapse; margin-top:30px; }
+th, td { padding:14px; border-bottom:1px solid #ddd; text-align:left; }
+th { background:#efefef; font-weight:600; }
+input[type="number"] { width:70px; padding:6px; }
+button { padding:8px 14px; background:#1c1c1e; color:white; border:none; border-radius:6px; cursor:pointer; }
+button:hover { opacity:0.85; }
+footer { background:#1c1c1e; color:white; text-align:center; padding:20px; margin-top:60px; font-size:0.9rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Access Systems and Security</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="doorking.html">Doorking</a></li>
+      <li><a href="butterflymx.html">ButterflyMX</a></li>
+      <li><a href="schlage.html">Schlage</a></li>
+      <li><a href="hid.html">HiD</a></li>
+      <li><a href="abb.html">ABB</a></li>
+      <li><a href="hikvision.html">HikVision</a></li>
+      <li><a href="vivotek.html">VivoTek</a></li>
+      <li><a href="rath-janus.html">Rath-Janus</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart (<span id="cartCount">0</span>)</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<h2>Schlage Products</h2>
+<p>High-quality locks, electronic access control, and security hardware from Schlage.</p>
+
+<div class="notice">
+If the Schlage product or accessory you need is not listed below, please contact us and we will provide pricing and availability.
+</div>
+
+<table>
+<tr>
+<th>Part Number</th>
+<th>Description</th>
+<th>Price (USD)</th>
+<th>Qty</th>
+<th></th>
+</tr>
+
+<tr><td>FE595</td><td>F10 Series Single Cylinder Deadbolt</td><td>$45</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'FE595','Single Cylinder Deadbolt',45)">Add</button></td></tr>
+<tr><td>FE599</td><td>F10 Series Double Cylinder Deadbolt</td><td>$55</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'FE599','Double Cylinder Deadbolt',55)">Add</button></td></tr>
+<tr><td>F10A</td><td>F10 Grade 1 Lever Lock</td><td>$70</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'F10A','Grade 1 Lever Lock',70)">Add</button></td></tr>
+<tr><td>F10B</td><td>F10 Grade 2 Lever Lock</td><td>$60</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'F10B','Grade 2 Lever Lock',60)">Add</button></td></tr>
+<tr><td>F110</td><td>Electronic Lock with Keypad</td><td>$350</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'F110','Electronic Lock Keypad',350)">Add</button></td></tr>
+<tr><td>F120</td><td>Smart Lock with Bluetooth</td><td>$400</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'F120','Smart Lock Bluetooth',400)">Add</button></td></tr>
+<tr><td>F123</td><td>Electronic Mortise Lock</td><td>$650</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'F123','Electronic Mortise Lock',650)">Add</button></td></tr>
+<tr><td>F125</td><td>Wireless Access Reader</td><td>$180</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'F125','Wireless Access Reader',180)">Add</button></td></tr>
+<tr><td>F130</td><td>Keypad for Electronic Locks</td><td>$95</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'F130','Keypad',95)">Add</button></td></tr>
+<tr><td>F135</td><td>Proximity Card Reader</td><td>$210</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'F135','Proximity Card Reader',210)">Add</button></td></tr>
+<tr><td>F140</td><td>Magnetic Lock 600lb</td><td>$320</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'F140','Magnetic Lock 600lb',320)">Add</button></td></tr>
+<tr><td>F145</td><td>Door Position Switch</td><td>$75</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'F145','Door Position Switch',75)">Add</button></td></tr>
+<tr><td>F150</td><td>Electronic Strike Plate</td><td>$190</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'F150','Electronic Strike Plate',190)">Add</button></td></tr>
+
+<!-- New Key Fobs & Card Readers -->
+<tr><td>9651T</td><td>Schlage 9651T Key Fob</td><td>$15</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'9651T','Schlage 9651T Key Fob',15)">Add</button></td></tr>
+<tr><td>9691T</td><td>Schlage 9691T Key Fob</td><td>$18</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'9691T','Schlage 9691T Key Fob',18)">Add</button></td></tr>
+<tr><td>F155</td><td>Key Fob RFID 125kHz</td><td>$12</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'F155','Key Fob RFID',12)">Add</button></td></tr>
+<tr><td>F160</td><td>Key Fob NFC</td><td>$18</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'F160','Key Fob NFC',18)">Add</button></td></tr>
+<tr><td>F165</td><td>Wireless Door Sensor</td><td>$85</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'F165','Door Sensor',85)">Add</button></td></tr>
+<tr><td>F170</td><td>Wireless Motion Sensor</td><td>$95</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'F170','Motion Sensor',95)">Add</button></td></tr>
+<tr><td>F175</td><td>Battery Backup Module</td><td>$160</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'F175','Battery Backup',160)">Add</button></td></tr>
+<tr><td>F180</td><td>Door Contact Kit</td><td>$45</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'F180','Door Contact',45)">Add</button></td></tr>
+<tr><td>F185</td><td>Access Control Panel</td><td>$950</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'F185','Access Control Panel',950)">Add</button></td></tr>
+<tr><td>F190</td><td>Ethernet Network Module</td><td>$175</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'F190','Ethernet Module',175)">Add</button></td></tr>
+<tr><td>F195</td><td>Wireless Keypad</td><td>$105</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'F195','Wireless Keypad',105)">Add</button></td></tr>
+
+</table>
+</main>
+
+<footer>
+© Access Systems and Security — Schlage Distributor
+</footer>
+
+<script>
+function addToCart(btn, part, name, price){
+  const qty = parseInt(btn.parentElement.previousElementSibling.querySelector("input").value);
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const existing = cart.find(i => i.part === part);
+  if(existing){
+    existing.quantity += qty;
+  } else {
+    cart.push({part,name,price,quantity:qty});
+  }
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCartCount();
+  alert("Added to cart");
+}
+
+function updateCartCount(){
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  document.getElementById("cartCount").textContent =
+    cart.reduce((t,i)=>t+i.quantity,0);
+}
+updateCartCount();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HikVision Products | Access Systems and Security</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+body { margin:0; font-family:'Inter',sans-serif; background:#f5f5f7; color:#1c1c1e; }
+header { background:#1c1c1e; color:white; padding:20px 40px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; }
+header h1 { margin:0; font-size:1.5rem; }
+nav ul { list-style:none; display:flex; gap:16px; padding:0; margin:0; flex-wrap:wrap; }
+nav a { color:white; text-decoration:none; font-weight:500; }
+nav a:hover { opacity:0.75; }
+main { max-width:1200px; margin:auto; padding:50px 30px; }
+h2 { font-size:2.2rem; margin-bottom:10px; }
+.notice { background:#ffffff; padding:18px; border-left:5px solid #1c1c1e; margin:25px 0; font-size:0.95rem; }
+table { width:100%; border-collapse:collapse; margin-top:30px; }
+th, td { padding:14px; border-bottom:1px solid #ddd; text-align:left; }
+th { background:#efefef; font-weight:600; }
+input[type="number"] { width:70px; padding:6px; }
+button { padding:8px 14px; background:#1c1c1e; color:white; border:none; border-radius:6px; cursor:pointer; }
+button:hover { opacity:0.85; }
+footer { background:#1c1c1e; color:white; text-align:center; padding:20px; margin-top:60px; font-size:0.9rem; }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Access Systems and Security</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="doorking.html">Doorking</a></li>
+      <li><a href="butterflymx.html">ButterflyMX</a></li>
+      <li><a href="schlage.html">Schlage</a></li>
+      <li><a href="hid.html">HiD</a></li>
+      <li><a href="abb.html">ABB</a></li>
+      <li><a href="hikvision.html">HikVision</a></li>
+      <li><a href="vivotek.html">VivoTek</a></li>
+      <li><a href="rath-janus.html">Rath-Janus</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart (<span id="cartCount">0</span>)</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<h2>HikVision Products</h2>
+<p>Surveillance cameras, NVRs, access controllers, and video intercom solutions.</p>
+
+<div class="notice">
+If the HikVision product or accessory you need is not listed below, please contact us and we will provide pricing and availability.
+</div>
+
+<table>
+<tr>
+<th>Part Number</th>
+<th>Description</th>
+<th>Price (USD)</th>
+<th>Qty</th>
+<th></th>
+</tr>
+
+<!-- ===== CAMERAS ===== -->
+<tr><td>DS-2CD2087G2-L</td><td>8MP DarkFighter Dome Camera</td><td>$410</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-2CD2087G2-L','8MP DarkFighter Dome Camera',410)">Add</button></td></tr>
+<tr><td>DS-2CD2183G0-I</td><td>8MP Mini Bullet Camera</td><td>$260</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-2CD2183G0-I','8MP Mini Bullet Camera',260)">Add</button></td></tr>
+<tr><td>DS-2CD2145FWD-I</td><td>4MP Turret Camera</td><td>$195</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-2CD2145FWD-I','4MP Turret Camera',195)">Add</button></td></tr>
+<tr><td>DS-2CD2347G1-L</td><td>3MP IP Bullet Camera</td><td>$220</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-2CD2347G1-L','3MP IP Bullet Camera',220)">Add</button></td></tr>
+<tr><td>DS-2CD2632F-I</td><td>2MP PTZ Camera</td><td>$1,150</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-2CD2632F-I','2MP PTZ Camera',1150)">Add</button></td></tr>
+
+<!-- ===== NVRs ===== -->
+<tr><td>DS-7732NI-I4</td><td>32CH NVR</td><td>$2,400</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-7732NI-I4','32CH NVR',2400)">Add</button></td></tr>
+<tr><td>DS-7732NXI-I4</td><td>32CH NVR with PoE</td><td>$2,650</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-7732NXI-I4','32CH NVR with PoE',2650)">Add</button></td></tr>
+
+<!-- ===== ACCESS CONTROLLERS ===== -->
+<tr><td>DS-K2602</td><td>Standalone Door Controller</td><td>$220</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-K2602','Standalone Door Controller',220)">Add</button></td></tr>
+<tr><td>DS-K1T802MF</td><td>Card + Fingerprint Terminal</td><td>$345</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-K1T802MF','Card + Fingerprint Terminal',345)">Add</button></td></tr>
+<tr><td>DS-K1T804EF</td><td>Face Recognition Access Terminal</td><td>$595</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-K1T804EF','Face Recognition Terminal',595)">Add</button></td></tr>
+<tr><td>DS-K1T331W</td><td>3.5" Indoor Access Panel</td><td>$180</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-K1T331W','3.5in Indoor Access Panel',180)">Add</button></td></tr>
+<tr><td>DS-K1T341</td><td>4.3" Indoor Access Panel</td><td>$220</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-K1T341','4.3in Indoor Access Panel',220)">Add</button></td></tr>
+<tr><td>DS-KH6320-WTE1</td><td>7" Indoor Monitor</td><td>$330</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-KH6320-WTE1','7in Indoor Monitor',330)">Add</button></td></tr>
+<tr><td>DS-KH6320-WTE2</td><td>10" Indoor Monitor</td><td>$495</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-KH6320-WTE2','10in Indoor Monitor',495)">Add</button></td></tr>
+
+<!-- ===== POWER & ACCESSORIES ===== -->
+<tr><td>DS-KAD706</td><td>Power Supply Module</td><td>$175</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-KAD706','Power Supply Module',175)">Add</button></td></tr>
+<tr><td>DS-KAB701</td><td>Alarm Expansion Module</td><td>$200</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-KAB701','Alarm Expansion Module',200)">Add</button></td></tr>
+<tr><td>DS-K1T800</td><td>Single Door Access Controller</td><td>$210</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-K1T800','Single Door Controller',210)">Add</button></td></tr>
+
+<!-- ===== MOUNTS & BRACKETS ===== -->
+<tr><td>DS-1258ZJ</td><td>Outdoor Camera Wall Mount</td><td>$140</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-1258ZJ','Wall Mount',140)">Add</button></td></tr>
+<tr><td>DS-1259ZJ-280</td><td>Outdoor Junction Box</td><td>$150</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-1259ZJ-280','Junction Box',150)">Add</button></td></tr>
+<tr><td>DS-1280ZJ-DM18</td><td>Ceiling Mount Bracket</td><td>$100</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-1280ZJ-DM18','Ceiling Mount',100)">Add</button></td></tr>
+<tr><td>DS-1280ZJ-DM19</td><td>Wall Mount Bracket (Adjustable)</td><td>$105</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-1280ZJ-DM19','Adjustable Wall Mount',105)">Add</button></td></tr>
+
+<!-- ===== ADDITIONAL CAMERAS ===== -->
+<tr><td>DS-2CD2043G0-I</td><td>4MP Mini Bullet Camera</td><td>$175</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-2CD2043G0-I','4MP Mini Bullet',175)">Add</button></td></tr>
+<tr><td>DS-2CD2047G2-L</td><td>4MP DarkFighter Dome</td><td>$345</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-2CD2047G2-L','4MP DarkFighter Dome',345)">Add</button></td></tr>
+<tr><td>DS-2CD2385FWD-I</td><td>8MP Turret Camera</td><td>$320</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-2CD2385FWD-I','8MP Turret Camera',320)">Add</button></td></tr>
+<tr><td>DS-K2601</td><td>Standalone Door Controller</td><td>$195</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'DS-K2601','Standalone Door Controller',195)">Add</button></td></tr>
+
+</table>
+</main>
+
+<footer>
+© Access Systems and Security — HikVision Distributor
+</footer>
+
+<script>
+function addToCart(btn, part, name, price){
+  const qty = parseInt(btn.parentElement.previousElementSibling.querySelector("input").value);
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const existing = cart.find(i => i.part === part);
+  if(existing){
+    existing.quantity += qty;
+  } else {
+    cart.push({part,name,price,quantity:qty});
+  }
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCartCount();
+  alert("Added to cart");
+}
+
+function updateCartCount(){
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  document.getElementById("cartCount").textContent =
+    cart.reduce((t,i)=>t+i.quantity,0);
+}
+updateCartCount();
+</script>
+
+</body>
+</html>

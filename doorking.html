@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doorking Products | Access Systems and Security</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:#f5f5f7;
+  color:#1c1c1e;
+}
+
+header {
+  background:#1c1c1e;
+  color:white;
+  padding:20px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+header h1 { margin:0; font-size:1.5rem; }
+
+nav ul {
+  list-style:none;
+  display:flex;
+  gap:16px;
+  padding:0;
+  margin:0;
+  flex-wrap:wrap;
+}
+
+nav a {
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+}
+
+nav a:hover { opacity:0.75; }
+
+main {
+  max-width:1200px;
+  margin:auto;
+  padding:50px 30px;
+}
+
+h2 {
+  font-size:2.2rem;
+  margin-bottom:10px;
+}
+
+.notice {
+  background:#ffffff;
+  padding:18px;
+  border-left:5px solid #1c1c1e;
+  margin:25px 0;
+  font-size:0.95rem;
+}
+
+table {
+  width:100%;
+  border-collapse:collapse;
+  margin-top:30px;
+}
+
+th, td {
+  padding:14px;
+  border-bottom:1px solid #ddd;
+  text-align:left;
+}
+
+th {
+  background:#efefef;
+  font-weight:600;
+}
+
+input[type="number"] {
+  width:70px;
+  padding:6px;
+}
+
+button {
+  padding:8px 14px;
+  background:#1c1c1e;
+  color:white;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+button:hover { opacity:0.85; }
+
+footer {
+  background:#1c1c1e;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:60px;
+  font-size:0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Access Systems and Security</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="doorking.html">Doorking</a></li>
+      <li><a href="butterflymx.html">ButterflyMX</a></li>
+      <li><a href="schlage.html">Schlage</a></li>
+      <li><a href="hid.html">HiD</a></li>
+      <li><a href="abb.html">ABB</a></li>
+      <li><a href="hikvision.html">HikVision</a></li>
+      <li><a href="vivotek.html">VivoTek</a></li>
+      <li><a href="rath-janus.html">Rath-Janus</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart (<span id="cartCount">0</span>)</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<h2>Doorking Products</h2>
+<p>Telephone entry systems, access controllers, gate operators, and accessories.</p>
+
+<div class="notice">
+If the Doorking part you need is not listed below, please contact us and we will gladly provide availability and pricing.
+</div>
+
+<table>
+<tr>
+<th>Part Number</th>
+<th>Description</th>
+<th>Price (USD)</th>
+<th>Qty</th>
+<th></th>
+</tr>
+
+<!-- ===== 1830 SERIES ===== -->
+<tr><td>1830-080</td><td>1830 Series Telephone Entry System, Flush Mount</td><td>$3,450</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1830-080','1830 Telephone Entry',3450)">Add</button></td></tr>
+<tr><td>1830-081</td><td>1830 Surface Mount Telephone Entry System</td><td>$3,620</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1830-081','1830 Surface Mount',3620)">Add</button></td></tr>
+<tr><td>1830-084</td><td>1830 Stainless Steel Front Panel</td><td>$820</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1830-084','1830 SS Panel',820)">Add</button></td></tr>
+
+<!-- ===== 1834 SERIES ===== -->
+<tr><td>1834-010</td><td>1834 Cellular Telephone Entry System</td><td>$2,750</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1834-010','1834 Cellular Entry',2750)">Add</button></td></tr>
+<tr><td>1834-080</td><td>1834 VoIP Telephone Entry System</td><td>$2,890</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1834-080','1834 VoIP Entry',2890)">Add</button></td></tr>
+
+<!-- ===== 1835 SERIES ===== -->
+<tr><td>1835-010</td><td>1835 Stand-Alone Access Controller</td><td>$1,950</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1835-010','1835 Controller',1950)">Add</button></td></tr>
+<tr><td>1835-080</td><td>1835 Networked Access Controller</td><td>$2,150</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1835-080','1835 Networked',2150)">Add</button></td></tr>
+
+<!-- ===== 1837 SERIES ===== -->
+<tr><td>1837-010</td><td>1837 PC Programmable Access Controller</td><td>$2,480</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1837-010','1837 Controller',2480)">Add</button></td></tr>
+<tr><td>1837-081</td><td>1837 Flush Mount Controller Enclosure</td><td>$690</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1837-081','1837 Enclosure',690)">Add</button></td></tr>
+
+<!-- ===== 1838 SERIES ===== -->
+<tr><td>1838-080</td><td>1838 Multi-Door Access Controller</td><td>$3,950</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1838-080','1838 Controller',3950)">Add</button></td></tr>
+<tr><td>1838-081</td><td>1838 Expansion Board</td><td>$840</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1838-081','1838 Expansion',840)">Add</button></td></tr>
+
+<!-- ===== ACCESSORIES ===== -->
+<tr><td>1801-090</td><td>Doorking Proximity Card Reader</td><td>$240</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1801-090','Prox Reader',240)">Add</button></td></tr>
+<tr><td>1506-080</td><td>Electric Strike Lock</td><td>$420</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1506-080','Electric Strike',420)">Add</button></td></tr>
+<tr><td>1610-080</td><td>Magnetic Lock 1200lb</td><td>$310</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1610-080','Mag Lock',310)">Add</button></td></tr>
+
+<!-- ===== 1830 SERIES ACCESSORIES ===== -->
+<tr><td>1830-090</td><td>1830 Replacement Keypad Assembly</td><td>$395</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1830-090','1830 Keypad',395)">Add</button></td></tr>
+<tr><td>1830-091</td><td>1830 Directory Display Module</td><td>$760</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1830-091','1830 Display',760)">Add</button></td></tr>
+<tr><td>1830-092</td><td>1830 Control Board Replacement</td><td>$1,180</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1830-092','1830 Control Board',1180)">Add</button></td></tr>
+
+<!-- ===== 1834 CELLULAR PARTS ===== -->
+<tr><td>1834-091</td><td>1834 LTE Cellular Modem Module</td><td>$640</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1834-091','1834 LTE Module',640)">Add</button></td></tr>
+<tr><td>1834-092</td><td>1834 Antenna Kit</td><td>$85</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1834-092','1834 Antenna',85)">Add</button></td></tr>
+
+<!-- ===== 1835 CONTROLLER EXPANSION ===== -->
+<tr><td>1835-090</td><td>1835 Input Expansion Board</td><td>$490</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1835-090','1835 Input Board',490)">Add</button></td></tr>
+<tr><td>1835-091</td><td>1835 Output Relay Expansion Board</td><td>$520</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1835-091','1835 Relay Board',520)">Add</button></td></tr>
+
+<!-- ===== 1837 PC PROGRAMMING ===== -->
+<tr><td>1837-090</td><td>1837 RS-232 Programming Cable</td><td>$75</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1837-090','1837 Cable',75)">Add</button></td></tr>
+<tr><td>1837-091</td><td>1837 Backup Battery Kit</td><td>$165</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1837-091','1837 Battery Kit',165)">Add</button></td></tr>
+
+<!-- ===== 1838 MULTI-DOOR SYSTEM ===== -->
+<tr><td>1838-090</td><td>1838 Power Supply Module</td><td>$560</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1838-090','1838 Power Supply',560)">Add</button></td></tr>
+<tr><td>1838-091</td><td>1838 Enclosure Cabinet</td><td>$890</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1838-091','1838 Cabinet',890)">Add</button></td></tr>
+
+<!-- ===== READERS & CREDENTIALS ===== -->
+<tr><td>1801-091</td><td>Doorking Wiegand Proximity Reader</td><td>$285</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1801-091','Wiegand Reader',285)">Add</button></td></tr>
+<tr><td>1801-092</td><td>Doorking Key Fob (Pack of 10)</td><td>$140</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1801-092','Key Fobs (10)',140)">Add</button></td></tr>
+
+<!-- ===== GATE & DOOR HARDWARE ===== -->
+<tr><td>1601-080</td><td>Gate Operator Control Board</td><td>$1,250</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1601-080','Gate Control Board',1250)">Add</button></td></tr>
+<tr><td>1615-080</td><td>Magnetic Lock 600lb</td><td>$210</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1615-080','600lb Mag Lock',210)">Add</button></td></tr>
+
+<!-- ===== POWER & CABLING ===== -->
+<tr><td>1802-080</td><td>12V DC Power Supply</td><td>$135</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1802-080','12V Power Supply',135)">Add</button></td></tr>
+<tr><td>1802-081</td><td>24V DC Power Supply</td><td>$165</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'1802-081','24V Power Supply',165)">Add</button></td></tr>
+
+
+</table>
+</main>
+
+<footer>
+© Access Systems and Security — Doorking Authorized Distributor
+</footer>
+
+<script>
+function addToCart(btn, part, name, price){
+  const qty = parseInt(btn.parentElement.previousElementSibling.querySelector("input").value);
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const existing = cart.find(i => i.part === part);
+  if(existing){
+    existing.quantity += qty;
+  } else {
+    cart.push({part,name,price,quantity:qty});
+  }
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCartCount();
+  alert("Added to cart");
+}
+
+function updateCartCount(){
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  document.getElementById("cartCount").textContent =
+    cart.reduce((t,i)=>t+i.quantity,0);
+}
+updateCartCount();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Access Systems and Security</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:#f5f5f7;
+  color:#1c1c1e;
+}
+
+header {
+  background:#1c1c1e;
+  color:white;
+  padding:20px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+header h1 { margin:0; font-size:1.5rem; }
+
+nav ul {
+  list-style:none;
+  display:flex;
+  gap:16px;
+  padding:0;
+  margin:0;
+  flex-wrap:wrap;
+}
+
+nav a {
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+}
+
+nav a:hover { opacity:0.75; }
+
+main {
+  max-width:900px;
+  margin:auto;
+  padding:50px 20px;
+}
+
+h2 {
+  font-size:2rem;
+  margin-bottom:15px;
+}
+
+.contact-info {
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom:30px;
+}
+
+.contact-info p {
+  font-size:1rem;
+  margin:8px 0;
+}
+
+.contact-form {
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-form label {
+  display:block;
+  margin:12px 0 6px;
+  font-weight:500;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  width:100%;
+  padding:10px;
+  border-radius:6px;
+  border:1px solid #ccc;
+  margin-bottom:15px;
+  font-size:0.95rem;
+}
+
+.contact-form button {
+  padding:12px 18px;
+  background:#1c1c1e;
+  color:white;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.contact-form button:hover { opacity:0.85; }
+
+footer {
+  background:#1c1c1e;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:50px;
+  font-size:0.9rem;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Access Systems and Security</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="doorking.html">Doorking</a></li>
+      <li><a href="butterflymx.html">ButterflyMX</a></li>
+      <li><a href="schlage.html">Schlage</a></li>
+      <li><a href="hid.html">HiD</a></li>
+      <li><a href="abb.html">ABB</a></li>
+      <li><a href="hikvision.html">HikVision</a></li>
+      <li><a href="vivotek.html">VivoTek</a></li>
+      <li><a href="rath-janus.html">Rath-Janus</a></li>
+      <li><a href="cart.html">Cart (<span id="cartCount">0</span>)</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<h2>Contact Us</h2>
+
+<div class="contact-info">
+  <p><strong>Mark Martello</strong> — 781-922-0051</p>
+  <p><strong>Ryan Martello</strong> — 781-816-3818</p>
+  <p>Email: <a href="mailto:brassit@msn.com">brassit@msn.com</a>, <a href="mailto:ryan-brassit@outlook.com">ryan-brassit@outlook.com</a></p>
+  <p>We have been distributing access control and security products for over 25 years. If you need a custom quote or service, please use the form below and include your company name, part numbers, and quantities.</p>
+</div>
+
+<div class="contact-form">
+  <form id="contactForm">
+    <label for="company">Company Name</label>
+    <input type="text" id="company" required>
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" required>
+
+    <label for="parts">Part Numbers & Quantity</label>
+    <textarea id="parts" rows="3" placeholder="e.g., 1838-080 x2, BMX-VID-7 x1"></textarea>
+
+    <label for="message">Additional Message / Notes</label>
+    <textarea id="message" rows="4"></textarea>
+
+    <button type="submit">Request Quote / Service</button>
+  </form>
+</div>
+
+</main>
+
+<footer>
+© Access Systems and Security — Distributor of Access Control Products
+</footer>
+
+<script>
+// Update cart count
+function updateCartCount(){
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  document.getElementById("cartCount").textContent =
+    cart.reduce((t,i)=>t+i.quantity,0);
+}
+updateCartCount();
+
+// Contact form submission via mailto
+document.getElementById("contactForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  const company = document.getElementById("company").value;
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const email = document.getElementById("email").value;
+  const parts = document.getElementById("parts").value;
+  const message = document.getElementById("message").value;
+
+  const subject = encodeURIComponent("Quote / Service Request from " + name);
+  const body = encodeURIComponent(
+    `Company: ${company}\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\n\nParts Requested:\n${parts}\n\nMessage:\n${message}`
+  );
+
+  // Multiple recipients
+  window.location.href = `mailto:brassit@msn.com,ryan-brassit@outlook.com?subject=${subject}&body=${body}`;
+
+  alert("Your request has been prepared in your email client. Please send it to complete the submission.");
+});
+</script>
+
+</body>
+</html>

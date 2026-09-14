@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cart | Access Systems and Security</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+body { margin:0; font-family:'Inter',sans-serif; background:#f5f5f7; color:#1c1c1e; }
+header { background:#1c1c1e; color:white; padding:20px 40px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; }
+header h1 { margin:0; font-size:1.5rem; }
+nav ul { list-style:none; display:flex; gap:16px; padding:0; margin:0; flex-wrap:wrap; }
+nav a { color:white; text-decoration:none; font-weight:500; }
+nav a:hover { opacity:0.75; }
+main { max-width:1200px; margin:auto; padding:50px 30px; }
+h2 { font-size:2.2rem; margin-bottom:20px; }
+table { width:100%; border-collapse:collapse; margin-top:20px; }
+th, td { padding:12px; border-bottom:1px solid #ddd; text-align:left; }
+th { background:#efefef; font-weight:600; }
+input[type="number"] { width:70px; padding:6px; }
+button { padding:8px 14px; background:#1c1c1e; color:white; border:none; border-radius:6px; cursor:pointer; }
+button.submit { background:#008080; margin-top:20px; }
+.subtotal { text-align:right; font-weight:700; margin-top:20px; font-size:1.1rem; }
+footer { background:#1c1c1e; color:white; text-align:center; padding:20px; margin-top:60px; font-size:0.9rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Access Systems and Security</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="doorking.html">Doorking</a></li>
+      <li><a href="butterflymx.html">ButterflyMX</a></li>
+      <li><a href="schlage.html">Schlage</a></li>
+      <li><a href="hid.html">HiD</a></li>
+      <li><a href="abb.html">ABB</a></li>
+      <li><a href="hikvision.html">HikVision</a></li>
+      <li><a href="vivotek.html">VivoTek</a></li>
+      <li><a href="rath-janus.html">Rath-Janus</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<h2>Shopping Cart</h2>
+
+<table id="cartTable">
+<tr>
+<th>Part Number</th>
+<th>Description</th>
+<th>Price</th>
+<th>Qty</th>
+<th>Total</th>
+</tr>
+</table>
+
+<div class="subtotal" id="cartSubtotal">Subtotal: $0</div>
+
+<label for="email">Your Email for Confirmation:</label>
+<input type="email" id="customerEmail" placeholder="you@example.com" style="padding:8px; margin-top:8px; width:250px;">
+
+<br>
+<button class="submit" onclick="submitOrder()">Submit Request</button>
+
+</main>
+
+<footer>
+© Access Systems and Security
+</footer>
+
+<script>
+function loadCart(){
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const table = document.getElementById("cartTable");
+    table.innerHTML = `
+    <tr>
+      <th>Part Number</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Qty</th>
+      <th>Total</th>
+    </tr>
+    `;
+    let subtotal = 0;
+    cart.forEach((item,index)=>{
+        const row = table.insertRow();
+        row.insertCell(0).textContent = item.part;
+        row.insertCell(1).textContent = item.name;
+        row.insertCell(2).textContent = `$${item.price}`;
+        const qtyCell = row.insertCell(3);
+        const qtyInput = document.createElement("input");
+        qtyInput.type = "number";
+        qtyInput.value = item.quantity;
+        qtyInput.min = 0;
+        qtyInput.onchange = ()=>{
+            if(qtyInput.value <= 0){
+                cart.splice(index,1);
+            } else {
+                cart[index].quantity = parseInt(qtyInput.value);
+            }
+            localStorage.setItem("cart", JSON.stringify(cart));
+            loadCart();
+        };
+        qtyCell.appendChild(qtyInput);
+        row.insertCell(4).textContent = `$${(item.price*item.quantity).toFixed(2)}`;
+        subtotal += item.price*item.quantity;
+    });
+    document.getElementById("cartSubtotal").textContent = `Subtotal: $${subtotal.toFixed(2)}`;
+}
+
+function submitOrder(){
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    if(cart.length===0){ alert("Your cart is empty"); return; }
+    const email = document.getElementById("customerEmail").value;
+    if(!email){ alert("Please enter your email"); return; }
+
+    let body = "New order request for Access Systems and Security\n\n";
+    let subtotal = 0;
+    cart.forEach(item=>{
+        body += `${item.part} - ${item.name} - Qty: ${item.quantity} - $${item.price*item.quantity}\n`;
+        subtotal += item.price*item.quantity;
+    });
+    body += `\nSubtotal: $${subtotal.toFixed(2)}\n\nCustomer email: ${email}\n\nCustomer will be contacted with confirmation once order is reviewed.`;
+
+    const mailtoLink = `mailto:brassit@msn.com,ryan-brassit@outlook.com?subject=New Order Request for Access Systems and Security&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+}
+
+loadCart();
+</script>
+
+</body>
+</html>
+
+

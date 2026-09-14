@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rath-Janus Products | Access Systems and Security</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+body { margin:0; font-family:'Inter',sans-serif; background:#f5f5f7; color:#1c1c1e; }
+header { background:#1c1c1e; color:white; padding:20px 40px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; }
+header h1 { margin:0; font-size:1.5rem; }
+nav ul { list-style:none; display:flex; gap:16px; padding:0; margin:0; flex-wrap:wrap; }
+nav a { color:white; text-decoration:none; font-weight:500; }
+nav a:hover { opacity:0.75; }
+main { max-width:1200px; margin:auto; padding:50px 30px; }
+h2 { font-size:2.2rem; margin-bottom:10px; }
+.notice { background:#ffffff; padding:18px; border-left:5px solid #1c1c1e; margin:25px 0; font-size:0.95rem; }
+table { width:100%; border-collapse:collapse; margin-top:30px; }
+th, td { padding:14px; border-bottom:1px solid #ddd; text-align:left; }
+th { background:#efefef; font-weight:600; }
+input[type="number"] { width:70px; padding:6px; }
+button { padding:8px 14px; background:#1c1c1e; color:white; border:none; border-radius:6px; cursor:pointer; }
+button:hover { opacity:0.85; }
+footer { background:#1c1c1e; color:white; text-align:center; padding:20px; margin-top:60px; font-size:0.9rem; }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Access Systems and Security</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="doorking.html">Doorking</a></li>
+      <li><a href="butterflymx.html">ButterflyMX</a></li>
+      <li><a href="schlage.html">Schlage</a></li>
+      <li><a href="hid.html">HiD</a></li>
+      <li><a href="abb.html">ABB</a></li>
+      <li><a href="hikvision.html">HikVision</a></li>
+      <li><a href="vivotek.html">VivoTek</a></li>
+      <li><a href="rath-janus.html">Rath-Janus</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart (<span id="cartCount">0</span>)</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<h2>Rath-Janus Elevator Control / Area of Refuge Products</h2>
+<p>Elevator emergency communication panels, area of refuge phones, and access modules.</p>
+
+<div class="notice">
+If the Rath-Janus product you need is not listed below, please contact us and we will provide pricing and availability.
+</div>
+
+<table>
+<tr>
+<th>Part Number</th>
+<th>Description</th>
+<th>Price (USD)</th>
+<th>Qty</th>
+<th></th>
+</tr>
+
+<!-- ===== AREA OF REFUGE PHONES ===== -->
+<tr><td>RJ-AOR-100</td><td>Single Area of Refuge Phone Panel</td><td>$1,250</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-AOR-100','Single Area of Refuge Phone Panel',1250)">Add</button></td></tr>
+<tr><td>RJ-AOR-200</td><td>Dual Area of Refuge Phone Panel</td><td>$1,750</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-AOR-200','Dual Area of Refuge Phone Panel',1750)">Add</button></td></tr>
+<tr><td>RJ-AOR-300</td><td>Emergency Elevator Phone Station</td><td>$950</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-AOR-300','Emergency Elevator Phone Station',950)">Add</button></td></tr>
+
+<!-- ===== ELEVATOR CONTROL MODULES ===== -->
+<tr><td>RJ-ECM-1</td><td>Elevator Control Module (Single Car)</td><td>$1,400</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-ECM-1','Elevator Control Module Single',1400)">Add</button></td></tr>
+<tr><td>RJ-ECM-2</td><td>Elevator Control Module (Dual Car)</td><td>$2,050</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-ECM-2','Elevator Control Module Dual',2050)">Add</button></td></tr>
+<tr><td>RJ-ECM-3</td><td>Network Interface Module</td><td>$600</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-ECM-3','Network Interface Module',600)">Add</button></td></tr>
+
+<!-- ===== REMOTE PANELS & ACCESSORIES ===== -->
+<tr><td>RJ-RP-50</td><td>Remote Elevator Panel</td><td>$750</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-RP-50','Remote Elevator Panel',750)">Add</button></td></tr>
+<tr><td>RJ-RP-100</td><td>Remote Area of Refuge Panel</td><td>$1,100</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-RP-100','Remote Area of Refuge Panel',1100)">Add</button></td></tr>
+<tr><td>RJ-AOR-MIC</td><td>Microphone Replacement Kit</td><td>$95</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-AOR-MIC','Microphone Replacement Kit',95)">Add</button></td></tr>
+<tr><td>RJ-AOR-SPK</td><td>Speaker Replacement Kit</td><td>$120</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-AOR-SPK','Speaker Replacement Kit',120)">Add</button></td></tr>
+
+<!-- ===== CABLING & MOUNTING ===== -->
+<tr><td>RJ-CBL-25</td><td>25ft Elevator Control Cable</td><td>$35</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-CBL-25','25ft Control Cable',35)">Add</button></td></tr>
+<tr><td>RJ-CBL-50</td><td>50ft Elevator Control Cable</td><td>$65</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-CBL-50','50ft Control Cable',65)">Add</button></td></tr>
+<tr><td>RJ-MNT-BRKT</td><td>Mounting Bracket Kit</td><td>$75</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-MNT-BRKT','Mounting Bracket Kit',75)">Add</button></td></tr>
+<tr><td>RJ-PS-12V</td><td>12V Power Supply Module</td><td>$140</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-PS-12V','12V Power Supply Module',140)">Add</button></td></tr>
+
+<!-- ===== ADDITIONAL PARTS ===== -->
+<tr><td>RJ-BATT-BKP</td><td>Backup Battery Module</td><td>$180</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-BATT-BKP','Backup Battery Module',180)">Add</button></td></tr>
+<tr><td>RJ-LCD-REP</td><td>Replacement LCD Panel</td><td>$400</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-LCD-REP','Replacement LCD Panel',400)">Add</button></td></tr>
+<tr><td>RJ-KEYPAD</td><td>Keypad Interface Module</td><td>$220</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-KEYPAD','Keypad Interface Module',220)">Add</button></td></tr>
+<tr><td>RJ-DOOR-CTRL</td><td>Door Control Module</td><td>$310</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-DOOR-CTRL','Door Control Module',310)">Add</button></td></tr>
+<tr><td>RJ-AOR-LIC</td><td>Software License (Annual)</td><td>$250</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-AOR-LIC','Software License Annual',250)">Add</button></td></tr>
+
+<!-- ===== ADDITIONAL PARTS ===== -->
+<tr><td>RJ-2500-205FM</td><td>5-Zone Fire/Area Control Panel</td><td>$2,150</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-2500-205FM','5-Zone Control Panel',2150)">Add</button></td></tr>
+<tr><td>RJ-SGN-EXIT</td><td>Exit Sign with Battery Backup</td><td>$85</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-SGN-EXIT','Exit Sign',85)">Add</button></td></tr>
+<tr><td>RJ-SGN-FIRE</td><td>Fire Alarm Signage</td><td>$60</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-SGN-FIRE','Fire Alarm Sign',60)">Add</button></td></tr>
+<tr><td>RJ-SGN-AOR</td><td>Area of Refuge Sign</td><td>$55</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-SGN-AOR','Area of Refuge Sign',55)">Add</button></td></tr>
+<tr><td>RJ-SGN-INTR</td><td>Elevator Instruction Sign</td><td>$48</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-SGN-INTR','Elevator Instruction Sign',48)">Add</button></td></tr>
+<tr><td>RJ-PS-24V</td><td>24V Power Supply for Panels</td><td>$190</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-PS-24V','24V Power Supply',190)">Add</button></td></tr>
+<tr><td>RJ-BATT-EXT</td><td>External Backup Battery Module</td><td>$230</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-BATT-EXT','External Backup Battery',230)">Add</button></td></tr>
+<tr><td>RJ-RLY-EXP</td><td>Relay Expansion Module</td><td>$310</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-RLY-EXP','Relay Expansion Module',310)">Add</button></td></tr>
+<tr><td>RJ-CBL-100</td><td>100ft Control / Communication Cable</td><td>$95</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-CBL-100','100ft Control Cable',95)">Add</button></td></tr>
+<tr><td>RJ-TERM-BLOCK</td><td>Terminal Block Connector Kit</td><td>$40</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-TERM-BLOCK','Terminal Block Kit',40)">Add</button></td></tr>
+<tr><td>RJ-MNT-PLATE</td><td>Mounting Plate for Panels</td><td>$55</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-MNT-PLATE','Mounting Plate',55)">Add</button></td></tr>
+<tr><td>RJ-ALM-REL</td><td>Alarm Relay Module</td><td>$185</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-ALM-REL','Alarm Relay Module',185)">Add</button></td></tr>
+<tr><td>RJ-SWITCH-8</td><td>8-Port Elevator Network Switch</td><td>$265</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-SWITCH-8','8-Port Network Switch',265)">Add</button></td></tr>
+<tr><td>RJ-CAM-MOD</td><td>Replacement Camera Module</td><td>$420</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-CAM-MOD','Replacement Camera',420)">Add</button></td></tr>
+<tr><td>RJ-MIC-SPK</td><td>Replacement Microphone & Speaker</td><td>$210</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'RJ-MIC-SPK','Replacement Mic & Speaker',210)">Add</button></td></tr>
+
+
+</table>
+</main>
+
+<footer>
+© Access Systems and Security — Rath-Janus Distributor
+</footer>
+
+<script>
+function addToCart(btn, part, name, price){
+  const qty = parseInt(btn.parentElement.previousElementSibling.querySelector("input").value);
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const existing = cart.find(i => i.part === part);
+  if(existing){
+    existing.quantity += qty;
+  } else {
+    cart.push({part,name,price,quantity:qty});
+  }
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCartCount();
+  alert("Added to cart");
+}
+
+function updateCartCount(){
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  document.getElementById("cartCount").textContent =
+    cart.reduce((t,i)=>t+i.quantity,0);
+}
+updateCartCount();
+</script>
+
+</body>
+</html>

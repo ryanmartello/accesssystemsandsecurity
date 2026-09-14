@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ButterflyMX Products | Access Systems and Security</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:#f5f5f7;
+  color:#1c1c1e;
+}
+
+header {
+  background:#1c1c1e;
+  color:white;
+  padding:20px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+header h1 { margin:0; font-size:1.5rem; }
+
+nav ul {
+  list-style:none;
+  display:flex;
+  gap:16px;
+  padding:0;
+  margin:0;
+  flex-wrap:wrap;
+}
+
+nav a {
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+}
+
+nav a:hover { opacity:0.75; }
+
+main {
+  max-width:1200px;
+  margin:auto;
+  padding:50px 30px;
+}
+
+h2 {
+  font-size:2.2rem;
+  margin-bottom:10px;
+}
+
+.notice {
+  background:#ffffff;
+  padding:18px;
+  border-left:5px solid #1c1c1e;
+  margin:25px 0;
+  font-size:0.95rem;
+}
+
+table {
+  width:100%;
+  border-collapse:collapse;
+  margin-top:30px;
+}
+
+th, td {
+  padding:14px;
+  border-bottom:1px solid #ddd;
+  text-align:left;
+}
+
+th {
+  background:#efefef;
+  font-weight:600;
+}
+
+input[type="number"] {
+  width:70px;
+  padding:6px;
+}
+
+button {
+  padding:8px 14px;
+  background:#1c1c1e;
+  color:white;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+button:hover { opacity:0.85; }
+
+footer {
+  background:#1c1c1e;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:60px;
+  font-size:0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Access Systems and Security</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="doorking.html">Doorking</a></li>
+      <li><a href="butterflymx.html">ButterflyMX</a></li>
+      <li><a href="schlage.html">Schlage</a></li>
+      <li><a href="hid.html">HiD</a></li>
+      <li><a href="abb.html">ABB</a></li>
+      <li><a href="hikvision.html">HikVision</a></li>
+      <li><a href="vivotek.html">VivoTek</a></li>
+      <li><a href="rath-janus.html">Rath-Janus</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart (<span id="cartCount">0</span>)</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<h2>ButterflyMX Products</h2>
+<p>Smart video intercoms, access controllers, and mobile credential solutions.</p>
+
+<div class="notice">
+If the ButterflyMX product or accessory you need is not listed below, please contact us and we will provide pricing and availability.
+</div>
+
+<table>
+<tr>
+<th>Part Number</th>
+<th>Description</th>
+<th>Price (USD)</th>
+<th>Qty</th>
+<th></th>
+</tr>
+
+<!-- ===== VIDEO INTERCOMS ===== -->
+<tr><td>BMX-VID-7</td><td>7” Video Intercom Panel</td><td>$3,250</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-VID-7','7in Video Intercom',3250)">Add</button></td></tr>
+<tr><td>BMX-VID-12</td><td>12” Video Intercom Panel</td><td>$4,750</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-VID-12','12in Video Intercom',4750)">Add</button></td></tr>
+
+<!-- ===== ACCESS CONTROLLERS ===== -->
+<tr><td>BMX-AC-1</td><td>ButterflyMX Access Controller (1 Door)</td><td>$1,250</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-AC-1','1 Door Controller',1250)">Add</button></td></tr>
+<tr><td>BMX-AC-2</td><td>ButterflyMX Access Controller (2 Door)</td><td>$1,650</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-AC-2','2 Door Controller',1650)">Add</button></td></tr>
+
+<!-- ===== POWER & NETWORK ===== -->
+<tr><td>BMX-POE-48</td><td>48V PoE Power Supply</td><td>$185</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-POE-48','PoE Power Supply',185)">Add</button></td></tr>
+<tr><td>BMX-SW-8</td><td>8-Port Managed Network Switch</td><td>$320</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-SW-8','8-Port Switch',320)">Add</button></td></tr>
+
+<!-- ===== MOUNTING & ACCESSORIES ===== -->
+<tr><td>BMX-MNT-FL</td><td>Flush Mount Bracket</td><td>$195</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-MNT-FL','Flush Mount',195)">Add</button></td></tr>
+<tr><td>BMX-MNT-SM</td><td>Surface Mount Bracket</td><td>$210</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-MNT-SM','Surface Mount',210)">Add</button></td></tr>
+
+<!-- ===== CREDENTIALS & KEY FOBS ===== -->
+<tr><td>BMX-FOB-BLE</td><td>Bluetooth Low Energy Key Fob</td><td>$18</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-FOB-BLE','BLE Key Fob',18)">Add</button></td></tr>
+
+<tr><td>BMX-FOB-RFID</td><td>RFID Key Fob (125kHz)</td><td>$12</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-FOB-RFID','RFID Key Fob',12)">Add</button></td></tr>
+
+<tr><td>BMX-CARD-RFID</td><td>RFID Proximity Card</td><td>$9</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-CARD-RFID','RFID Card',9)">Add</button></td></tr>
+
+<tr><td>BMX-MOB-CRED</td><td>Mobile Credential (Per User)</td><td>$25</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-MOB-CRED','Mobile Credential',25)">Add</button></td></tr>
+
+<!-- ===== ACCESS & IO HARDWARE ===== -->
+<tr><td>BMX-RELAY-1</td><td>Single Relay Output Module</td><td>$140</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-RELAY-1','Relay Module',140)">Add</button></td></tr>
+
+<tr><td>BMX-IO-4</td><td>4-Input / 4-Output Expansion Board</td><td>$295</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-IO-4','IO Expansion',295)">Add</button></td></tr>
+
+<tr><td>BMX-DOOR-STRIKE</td><td>Electric Door Strike Interface</td><td>$180</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-DOOR-STRIKE','Strike Interface',180)">Add</button></td></tr>
+
+<!-- ===== REPLACEMENT PARTS ===== -->
+<tr><td>BMX-CAM-REP</td><td>Replacement Camera Module</td><td>$420</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-CAM-REP','Camera Module',420)">Add</button></td></tr>
+
+<tr><td>BMX-MIC-SPK</td><td>Microphone & Speaker Assembly</td><td>$210</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-MIC-SPK','Mic & Speaker',210)">Add</button></td></tr>
+
+<tr><td>BMX-LCD-REP</td><td>Replacement LCD Touchscreen</td><td>$1,150</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-LCD-REP','LCD Screen',1150)">Add</button></td></tr>
+
+<!-- ===== POWER & ELECTRICAL ===== -->
+<tr><td>BMX-PS-12V</td><td>12V DC Power Supply</td><td>$95</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-PS-12V','12V Power Supply',95)">Add</button></td></tr>
+
+<tr><td>BMX-PS-24V</td><td>24V DC Power Supply</td><td>$130</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-PS-24V','24V Power Supply',130)">Add</button></td></tr>
+
+<tr><td>BMX-BATT-BKP</td><td>Backup Battery Module</td><td>$165</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-BATT-BKP','Backup Battery',165)">Add</button></td></tr>
+
+<!-- ===== SOFTWARE & LICENSES ===== -->
+<tr><td>BMX-DOOR-LIC</td><td>Door Access License (Annual)</td><td>$120</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-DOOR-LIC','Door License',120)">Add</button></td></tr>
+
+<tr><td>BMX-ADMIN-LIC</td><td>Admin Management License</td><td>$300</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-ADMIN-LIC','Admin License',300)">Add</button></td></tr>
+
+<tr><td>BMX-SUPPORT</td><td>Premium Support Plan (Annual)</td><td>$495</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-SUPPORT','Support Plan',495)">Add</button></td></tr>
+
+<!-- ===== INSTALLATION ACCESSORIES ===== -->
+<tr><td>BMX-CAT6-EXT</td><td>CAT6 Network Extension Kit</td><td>$65</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-CAT6-EXT','Network Kit',65)">Add</button></td></tr>
+
+<tr><td>BMX-WTHR-SHLD</td><td>Weather Shield Housing</td><td>$180</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'BMX-WTHR-SHLD','Weather Shield',180)">Add</button></td></tr>
+
+
+</table>
+</main>
+
+<footer>
+© Access Systems and Security — ButterflyMX Distributor
+</footer>
+
+<script>
+function addToCart(btn, part, name, price){
+  const qty = parseInt(btn.parentElement.previousElementSibling.querySelector("input").value);
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const existing = cart.find(i => i.part === part);
+  if(existing){
+    existing.quantity += qty;
+  } else {
+    cart.push({part,name,price,quantity:qty});
+  }
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCartCount();
+  alert("Added to cart");
+}
+
+function updateCartCount(){
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  document.getElementById("cartCount").textContent =
+    cart.reduce((t,i)=>t+i.quantity,0);
+}
+updateCartCount();
+</script>
+
+</body>
+</html>

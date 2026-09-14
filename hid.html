@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HID Products | Access Systems and Security</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:#f5f5f7;
+  color:#1c1c1e;
+}
+
+header {
+  background:#1c1c1e;
+  color:white;
+  padding:20px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+header h1 { margin:0; font-size:1.5rem; }
+
+nav ul {
+  list-style:none;
+  display:flex;
+  gap:16px;
+  padding:0;
+  margin:0;
+  flex-wrap:wrap;
+}
+
+nav a {
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+}
+
+nav a:hover { opacity:0.75; }
+
+main {
+  max-width:1200px;
+  margin:auto;
+  padding:50px 30px;
+}
+
+h2 {
+  font-size:2.2rem;
+  margin-bottom:10px;
+}
+
+.notice {
+  background:#ffffff;
+  padding:18px;
+  border-left:5px solid #1c1c1e;
+  margin:25px 0;
+  font-size:0.95rem;
+}
+
+table {
+  width:100%;
+  border-collapse:collapse;
+  margin-top:30px;
+}
+
+th, td {
+  padding:14px;
+  border-bottom:1px solid #ddd;
+  text-align:left;
+}
+
+th {
+  background:#efefef;
+  font-weight:600;
+}
+
+input[type="number"] {
+  width:70px;
+  padding:6px;
+}
+
+button {
+  padding:8px 14px;
+  background:#1c1c1e;
+  color:white;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+button:hover { opacity:0.85; }
+
+footer {
+  background:#1c1c1e;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:60px;
+  font-size:0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Access Systems and Security</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="doorking.html">Doorking</a></li>
+      <li><a href="butterflymx.html">ButterflyMX</a></li>
+      <li><a href="schlage.html">Schlage</a></li>
+      <li><a href="hid.html">HiD</a></li>
+      <li><a href="abb.html">ABB</a></li>
+      <li><a href="hikvision.html">HikVision</a></li>
+      <li><a href="vivotek.html">VivoTek</a></li>
+      <li><a href="rath-janus.html">Rath-Janus</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart (<span id="cartCount">0</span>)</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<h2>HID Products</h2>
+<p>Access control readers, credentials, key fobs, and cards for professional security systems.</p>
+
+<div class="notice">
+If the HID product or accessory you need is not listed below, please contact us and we will provide pricing and availability.
+</div>
+
+<table>
+<tr>
+<th>Part Number</th>
+<th>Description</th>
+<th>Price (USD)</th>
+<th>Qty</th>
+<th></th>
+</tr>
+
+<tr><td>iCLASS-SE-R10</td><td>iCLASS SE Reader 13.56 MHz</td><td>$295</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'iCLASS-SE-R10','iCLASS SE Reader',295)">Add</button></td></tr>
+<tr><td>iCLASS-R10</td><td>iCLASS 13.56 MHz Reader</td><td>$265</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'iCLASS-R10','iCLASS Reader',265)">Add</button></td></tr>
+<tr><td>ProxProx-125</td><td>Proximity Reader 125 kHz</td><td>$195</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ProxProx-125','Proximity Reader',195)">Add</button></td></tr>
+<tr><td>OMNIKEY-3121</td><td>USB Contactless Smart Card Reader</td><td>$145</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'OMNIKEY-3121','USB Smart Card Reader',145)">Add</button></td></tr>
+<tr><td>HID-FOB-125</td><td>Proximity Key Fob 125 kHz</td><td>$12</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'HID-FOB-125','Key Fob 125kHz',12)">Add</button></td></tr>
+<tr><td>HID-FOB-13</td><td>iCLASS Key Fob 13.56 MHz</td><td>$15</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'HID-FOB-13','iCLASS Key Fob',15)">Add</button></td></tr>
+<tr><td>HID-PROX-Card</td><td>125 kHz Proximity Card</td><td>$9</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'HID-PROX-Card','Proximity Card',9)">Add</button></td></tr>
+<tr><td>HID-iCLASS-Card</td><td>iCLASS Contactless Smart Card</td><td>$14</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'HID-iCLASS-Card','iCLASS Card',14)">Add</button></td></tr>
+<tr><td>HID-EdgeReader</td><td>EdgeReader Egress Reader</td><td>$220</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'HID-EdgeReader','EdgeReader',220)">Add</button></td></tr>
+<tr><td>HID-MultiCLASS-Reader</td><td>MultiCLASS SE Reader</td><td>$295</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'HID-MultiCLASS-Reader','MultiCLASS Reader',295)">Add</button></td></tr>
+<tr><td>HID-Card-Encoder</td><td>Card Encoding Device</td><td>$375</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'HID-Card-Encoder','Card Encoder',375)">Add</button></td></tr>
+<tr><td>HID-iCLASS-SE-FOB</td><td>iCLASS SE Key Fob</td><td>$18</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'HID-iCLASS-SE-FOB','iCLASS SE Fob',18)">Add</button></td></tr>
+<tr><td>HID-LongRange-Reader</td><td>Long Range 125 kHz Reader</td><td>$345</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'HID-LongRange-Reader','Long Range Reader',345)">Add</button></td></tr>
+<tr><td>HID-Wiegand-Reader</td><td>Wiegand Interface Reader</td><td>$215</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'HID-Wiegand-Reader','Wiegand Reader',215)">Add</button></td></tr>
+<tr><td>HID-USB-KB-Reader</td><td>USB Keyboard Emulation Reader</td><td>$180</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'HID-USB-KB-Reader','USB KB Reader',180)">Add</button></td></tr>
+<tr><td>HID-Rugged-Reader</td><td>Rugged Outdoor Proximity Reader</td><td>$295</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'HID-Rugged-Reader','Rugged Reader',295)">Add</button></td></tr>
+
+</table>
+</main>
+
+<footer>
+© Access Systems and Security — HID Distributor
+</footer>
+
+<script>
+function addToCart(btn, part, name, price){
+  const qty = parseInt(btn.parentElement.previousElementSibling.querySelector("input").value);
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const existing = cart.find(i => i.part === part);
+  if(existing){
+    existing.quantity += qty;
+  } else {
+    cart.push({part,name,price,quantity:qty});
+  }
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCartCount();
+  alert("Added to cart");
+}
+
+function updateCartCount(){
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  document.getElementById("cartCount").textContent =
+    cart.reduce((t,i)=>t+i.quantity,0);
+}
+updateCartCount();
+</script>
+
+</body>
+</html>

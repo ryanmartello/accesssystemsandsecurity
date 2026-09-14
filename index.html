@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Access Systems and Security</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --dark:#1c1c1e;
+  --light:#f5f5f7;
+  --card:#ffffff;
+  --accent:#2c2c2e;
+}
+
+* { box-sizing:border-box; }
+
+body {
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:var(--light);
+  color:var(--dark);
+}
+
+/* ===== HEADER ===== */
+header {
+  background:var(--dark);
+  color:white;
+  padding:20px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+header h1 {
+  font-size:1.6rem;
+  margin:0;
+}
+
+nav ul {
+  list-style:none;
+  display:flex;
+  gap:16px;
+  margin:0;
+  padding:0;
+  flex-wrap:wrap;
+}
+
+nav a {
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+  font-size:0.95rem;
+}
+
+nav a:hover { opacity:0.75; }
+
+/* ===== HERO ===== */
+.hero {
+  height:360px;
+  background:linear-gradient(
+      rgba(0,0,0,0.55),
+      rgba(0,0,0,0.55)
+    ),
+    url("https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1600&q=80");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  padding:20px;
+}
+
+.hero h2 {
+  font-size:2.4rem;
+  max-width:900px;
+}
+
+/* ===== SECTIONS ===== */
+section {
+  padding:60px 30px;
+  max-width:1200px;
+  margin:auto;
+}
+
+section h2 {
+  text-align:center;
+  font-size:2rem;
+  margin-bottom:20px;
+}
+
+section p {
+  max-width:900px;
+  margin:0 auto 30px;
+  text-align:center;
+  font-size:1.05rem;
+  line-height:1.6;
+}
+
+/* ===== SEARCH ===== */
+.search-container {
+  max-width:480px;
+  margin:40px auto;
+  position:relative;
+}
+
+#searchInput {
+  width:100%;
+  padding:14px 16px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  font-size:1rem;
+}
+
+#suggestions {
+  position:absolute;
+  top:100%;
+  left:0;
+  right:0;
+  background:white;
+  border:1px solid #ccc;
+  border-top:none;
+  border-radius:0 0 10px 10px;
+  display:none;
+  max-height:260px;
+  overflow-y:auto;
+  z-index:10;
+}
+
+#suggestions div {
+  padding:10px 14px;
+  cursor:pointer;
+}
+
+#suggestions div:hover {
+  background:#efefef;
+}
+
+/* ===== PRODUCT LINE CARDS ===== */
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+  margin-top:40px;
+}
+
+.card {
+  background:var(--card);
+  border-radius:16px;
+  padding:28px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  text-align:center;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:translateY(-6px);
+  box-shadow:0 15px 40px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+  margin-top:0;
+  font-size:1.3rem;
+}
+
+.card p {
+  font-size:0.95rem;
+  margin-bottom:20px;
+}
+
+.card a {
+  display:inline-block;
+  padding:12px 22px;
+  background:var(--dark);
+  color:white;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background:var(--dark);
+  color:white;
+  text-align:center;
+  padding:25px;
+  font-size:0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Access Systems and Security</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="doorking.html">Doorking</a></li>
+      <li><a href="butterflymx.html">ButterflyMX</a></li>
+      <li><a href="schlage.html">Schlage</a></li>
+      <li><a href="hid.html">HiD</a></li>
+      <li><a href="abb.html">ABB</a></li>
+      <li><a href="hikvision.html">HikVision</a></li>
+      <li><a href="vivotek.html">VivoTek</a></li>
+      <li><a href="rath-janus.html">Rath-Janus</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart (<span id="cartCount">0</span>)</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Professional Access Control, Security & Life-Safety Integrator<br>Serving Boston & Beyond for Over 25 Years</h2>
+</div>
+
+<section>
+  <h2>Who We Are</h2>
+  <p>
+    Access Systems and Security is a trusted dealer and integrator of access control,
+    surveillance, elevator communication, and life-safety solutions.
+    We support property managers, and contractors with
+    professional-grade hardware from industry-leading manufacturers.
+  </p>
+
+  <div class="search-container">
+    <input id="searchInput" placeholder="Search by part number (ex: 1838-080)" oninput="searchParts(this.value)">
+    <div id="suggestions"></div>
+  </div>
+</section>
+
+<section>
+  <h2>Our Product Lines</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Doorking</h3>
+      <p>Access controllers, keypads, telephone entry, gate operators.</p>
+      <a href="doorking.html">View Products</a>
+    </div>
+
+    <div class="card">
+      <h3>ButterflyMX</h3>
+      <p>Video intercoms and mobile credential systems.</p>
+      <a href="butterflymx.html">View Products</a>
+    </div>
+
+    <div class="card">
+      <h3>Schlage</h3>
+      <p>Commercial locks, cylinders, and credential solutions.</p>
+      <a href="schlage.html">View Products</a>
+    </div>
+
+    <div class="card">
+      <h3>HiD Global</h3>
+      <p>Readers, credentials, and identity solutions.</p>
+      <a href="hid.html">View Products</a>
+    </div>
+
+    <div class="card">
+      <h3>ABB</h3>
+      <p>Industrial control and automation components.</p>
+      <a href="abb.html">View Products</a>
+    </div>
+
+    <div class="card">
+      <h3>HikVision</h3>
+      <p>IP cameras, NVRs, and video management hardware.</p>
+      <a href="hikvision.html">View Products</a>
+    </div>
+
+    <div class="card">
+      <h3>VivoTek</h3>
+      <p>Enterprise-grade surveillance solutions.</p>
+      <a href="vivotek.html">View Products</a>
+    </div>
+
+    <div class="card">
+      <h3>Rath-Janus</h3>
+      <p>Elevator communication and Area of Refuge systems.</p>
+      <a href="rath-janus.html">View Products</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © Access Systems and Security — Boston, MA
+</footer>
+
+<script>
+const partIndex = {
+  "1838-080":"doorking.html",
+  "1837":"doorking.html",
+  "1835":"doorking.html",
+  "1830":"doorking.html",
+  "1834":"doorking.html"
+};
+
+function searchParts(value){
+  const box = document.getElementById("suggestions");
+  box.innerHTML = "";
+  if(!value){ box.style.display="none"; return; }
+
+  Object.keys(partIndex).filter(p =>
+    p.includes(value)
+  ).forEach(p=>{
+    const d = document.createElement("div");
+    d.textContent = p;
+    d.onclick = ()=> window.location.href = partIndex[p];
+    box.appendChild(d);
+  });
+
+  box.style.display = box.children.length ? "block" : "none";
+}
+
+function updateCartCount(){
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  document.getElementById("cartCount").textContent =
+    cart.reduce((t,i)=>t+i.quantity,0);
+}
+updateCartCount();
+</script>
+
+</body>
+</html>

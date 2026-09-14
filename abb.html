@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABB Products | Access Systems and Security</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:#f5f5f7;
+  color:#1c1c1e;
+}
+
+header {
+  background:#1c1c1e;
+  color:white;
+  padding:20px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+header h1 { margin:0; font-size:1.5rem; }
+
+nav ul {
+  list-style:none;
+  display:flex;
+  gap:16px;
+  padding:0;
+  margin:0;
+  flex-wrap:wrap;
+}
+
+nav a {
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+}
+
+nav a:hover { opacity:0.75; }
+
+main {
+  max-width:1200px;
+  margin:auto;
+  padding:50px 30px;
+}
+
+h2 {
+  font-size:2.2rem;
+  margin-bottom:10px;
+}
+
+.notice {
+  background:#ffffff;
+  padding:18px;
+  border-left:5px solid #1c1c1e;
+  margin:25px 0;
+  font-size:0.95rem;
+}
+
+table {
+  width:100%;
+  border-collapse:collapse;
+  margin-top:30px;
+}
+
+th, td {
+  padding:14px;
+  border-bottom:1px solid #ddd;
+  text-align:left;
+}
+
+th {
+  background:#efefef;
+  font-weight:600;
+}
+
+input[type="number"] {
+  width:70px;
+  padding:6px;
+}
+
+button {
+  padding:8px 14px;
+  background:#1c1c1e;
+  color:white;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+button:hover { opacity:0.85; }
+
+footer {
+  background:#1c1c1e;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:60px;
+  font-size:0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Access Systems and Security</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="doorking.html">Doorking</a></li>
+      <li><a href="butterflymx.html">ButterflyMX</a></li>
+      <li><a href="schlage.html">Schlage</a></li>
+      <li><a href="hid.html">HiD</a></li>
+      <li><a href="abb.html">ABB</a></li>
+      <li><a href="hikvision.html">HikVision</a></li>
+      <li><a href="vivotek.html">VivoTek</a></li>
+      <li><a href="rath-janus.html">Rath-Janus</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart (<span id="cartCount">0</span>)</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<h2>ABB Products</h2>
+<p>Industrial access controllers, relays, sensors, and system accessories for security and automation.</p>
+
+<div class="notice">
+If the ABB product or accessory you need is not listed below, please contact us and we will provide pricing and availability.
+</div>
+
+<table>
+<tr>
+<th>Part Number</th>
+<th>Description</th>
+<th>Price (USD)</th>
+<th>Qty</th>
+<th></th>
+</tr>
+
+<tr><td>ABB-CTRL-AC100</td><td>Access Controller AC100</td><td>$1,250</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-CTRL-AC100','Access Controller AC100',1250)">Add</button></td></tr>
+<tr><td>ABB-CTRL-AC200</td><td>Access Controller AC200</td><td>$1,550</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-CTRL-AC200','Access Controller AC200',1550)">Add</button></td></tr>
+<tr><td>ABB-RELAY-1</td><td>Single Relay Output Module</td><td>$145</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-RELAY-1','Relay Module',145)">Add</button></td></tr>
+<tr><td>ABB-RELAY-2</td><td>Dual Relay Output Module</td><td>$210</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-RELAY-2','Dual Relay Module',210)">Add</button></td></tr>
+<tr><td>ABB-PS-12V</td><td>12V Power Supply Unit</td><td>$95</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-PS-12V','12V Power Supply',95)">Add</button></td></tr>
+<tr><td>ABB-PS-24V</td><td>24V Power Supply Unit</td><td>$130</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-PS-24V','24V Power Supply',130)">Add</button></td></tr>
+<tr><td>ABB-SENSOR-MAG</td><td>Magnetic Door Sensor</td><td>$65</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-SENSOR-MAG','Magnetic Sensor',65)">Add</button></td></tr>
+<tr><td>ABB-SENSOR-MOTION</td><td>Motion Detector Sensor</td><td>$180</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-SENSOR-MOTION','Motion Sensor',180)">Add</button></td></tr>
+<tr><td>ABB-DOOR-STRIKE</td><td>Electric Door Strike Interface</td><td>$195</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-DOOR-STRIKE','Door Strike',195)">Add</button></td></tr>
+<tr><td>ABB-KEY-FOB</td><td>Proximity Key Fob</td><td>$12</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-KEY-FOB','Key Fob',12)">Add</button></td></tr>
+<tr><td>ABB-RFID-CARD</td><td>RFID Proximity Card 125 kHz</td><td>$9</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-RFID-CARD','RFID Card',9)">Add</button></td></tr>
+<tr><td>ABB-MOB-CRED</td><td>Mobile Credential License</td><td>$25</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-MOB-CRED','Mobile Credential',25)">Add</button></td></tr>
+<tr><td>ABB-EXP-IO4</td><td>4 Input / 4 Output Expansion Board</td><td>$295</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-EXP-IO4','IO Expansion',295)">Add</button></td></tr>
+<tr><td>ABB-EXP-IO8</td><td>8 Input / 8 Output Expansion Board</td><td>$485</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-EXP-IO8','IO Expansion',485)">Add</button></td></tr>
+<tr><td>ABB-READER-MAG</td><td>Magnetic Card Reader</td><td>$215</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-READER-MAG','Magnetic Reader',215)">Add</button></td></tr>
+<tr><td>ABB-READER-RFID</td><td>RFID Card Reader 13.56 MHz</td><td>$295</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-READER-RFID','RFID Reader',295)">Add</button></td></tr>
+<tr><td>ABB-DOOR-LOCK</td><td>Electric Door Lock Module</td><td>$180</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-DOOR-LOCK','Door Lock Module',180)">Add</button></td></tr>
+<tr><td>ABB-BAT-BACKUP</td><td>Backup Battery Module</td><td>$165</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-BAT-BACKUP','Backup Battery',165)">Add</button></td></tr>
+<tr><td>ABB-MNT-BRKT</td><td>Mounting Bracket</td><td>$55</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-MNT-BRKT','Mounting Bracket',55)">Add</button></td></tr>
+<tr><td>ABB-CAB-10</td><td>10-Pin Connector Cable</td><td>$25</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-CAB-10','10-Pin Cable',25)">Add</button></td></tr>
+<tr><td>ABB-CAB-20</td><td>20-Pin Connector Cable</td><td>$45</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-CAB-20','20-Pin Cable',45)">Add</button></td></tr>
+<!-- ===== ADDITIONAL ABB PRODUCTS ===== -->
+<tr><td>ABB-VID-7IN</td><td>7” Indoor Video Panel</td><td>$1,150</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-VID-7IN','7in Indoor Video Panel',1150)">Add</button></td></tr>
+<tr><td>ABB-VID-10IN</td><td>10” Indoor Video Panel</td><td>$1,450</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-VID-10IN','10in Indoor Video Panel',1450)">Add</button></td></tr>
+<tr><td>ABB-VID-DIST-4</td><td>4-Port Video Distributor</td><td>$310</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-VID-DIST-4','4-Port Video Distributor',310)">Add</button></td></tr>
+<tr><td>ABB-VID-DIST-8</td><td>8-Port Video Distributor</td><td>$485</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-VID-DIST-8','8-Port Video Distributor',485)">Add</button></td></tr>
+<tr><td>ABB-RELAY-4</td><td>4-Relay Expansion Module</td><td>$295</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-RELAY-4','4-Relay Module',295)">Add</button></td></tr>
+<tr><td>ABB-RELAY-8</td><td>8-Relay Expansion Module</td><td>$485</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-RELAY-8','8-Relay Module',485)">Add</button></td></tr>
+<tr><td>ABB-CAM-OUTDOOR</td><td>Outdoor CCTV Camera Module</td><td>$420</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-CAM-OUTDOOR','Outdoor Camera',420)">Add</button></td></tr>
+<tr><td>ABB-CTRL-EXP</td><td>Access Controller Expansion Module</td><td>$320</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-CTRL-EXP','Controller Expansion',320)">Add</button></td></tr>
+<tr><td>ABB-KEYPAD</td><td>Wired Keypad Access Module</td><td>$185</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-KEYPAD','Keypad Module',185)">Add</button></td></tr>
+<tr><td>ABB-DOOR-SENSOR</td><td>Door Position Sensor</td><td>$75</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-DOOR-SENSOR','Door Sensor',75)">Add</button></td></tr>
+<tr><td>ABB-READER-BLE</td><td>Bluetooth Low Energy Card Reader</td><td>$215</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-READER-BLE','BLE Card Reader',215)">Add</button></td></tr>
+<tr><td>ABB-READER-NFC</td><td>NFC Credential Reader</td><td>$295</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-READER-NFC','NFC Reader',295)">Add</button></td></tr>
+<tr><td>ABB-EXP-POE</td><td>PoE Injector Expansion Module</td><td>$85</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-EXP-POE','PoE Expansion',85)">Add</button></td></tr>
+<tr><td>ABB-ALARM-IO</td><td>Alarm Input/Output Module</td><td>$180</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-ALARM-IO','Alarm IO Module',180)">Add</button></td></tr>
+<tr><td>ABB-SWITCH-8</td><td>8-Port Network Switch</td><td>$320</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-SWITCH-8','8-Port Switch',320)">Add</button></td></tr>
+<tr><td>ABB-SWITCH-16</td><td>16-Port Network Switch</td><td>$620</td><td><input type="number" value="1" min="1"></td><td><button onclick="addToCart(this,'ABB-SWITCH-16','16-Port Switch',620)">Add</button></td></tr>
+
+
+</table>
+</main>
+
+<footer>
+© Access Systems and Security — ABB Distributor
+</footer>
+
+<script>
+function addToCart(btn, part, name, price){
+  const qty = parseInt(btn.parentElement.previousElementSibling.querySelector("input").value);
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const existing = cart.find(i => i.part === part);
+  if(existing){
+    existing.quantity += qty;
+  } else {
+    cart.push({part,name,price,quantity:qty});
+  }
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCartCount();
+  alert("Added to cart");
+}
+
+function updateCartCount(){
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  document.getElementById("cartCount").textContent =
+    cart.reduce((t,i)=>t+i.quantity,0);
+}
+updateCartCount();
+</script>
+
+</body>
+</html>
